@@ -8,8 +8,13 @@ interface EhCardProps {
 
 const EhCard = ({ title, children }: EhCardProps) => (
   <Center py={6}>
-    <Box w="70vw" bg="#222b45" boxShadow={'2xl'} rounded={'md'}>
-      <Stack color="white" spacing="8" py="6" px="24" align={'center'}>
+    <Box
+      w={{ base: '80vw', md: '70vw' }}
+      bg="#222b45"
+      boxShadow={'2xl'}
+      rounded={'md'}
+    >
+      <Stack color="white" spacing="8" py="6" px="6vw" align={'center'}>
         <Heading>{title}</Heading>
         <Box fontWeight="500" rounded={'full'}>
           {children}
