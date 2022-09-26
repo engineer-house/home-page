@@ -30,13 +30,13 @@ const Home: NextPage = () => (
       </Heading>
     </VStack>
 
-    <Image
-      mx="auto"
-      borderRadius="full"
-      boxSize="xs"
-      src="/engineer_house_logo.png"
-      alt="engineer_house_logo"
-    />
+    {/*<Image*/}
+    {/*  mx="auto"*/}
+    {/*  borderRadius="full"*/}
+    {/*  boxSize="xs"*/}
+    {/*  src="/engineer_house_logo.png"*/}
+    {/*  alt="engineer_house_logo"*/}
+    {/*/>*/}
 
     <EhCard title="ABOUT">
       <Text m="0" fontSize="lg">
