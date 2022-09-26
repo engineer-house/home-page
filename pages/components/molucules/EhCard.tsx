@@ -6,7 +6,7 @@ interface EhCardProps {
   children: React.ReactNode
 }
 
-export const EhCard = ({ title, children }: EhCardProps) => (
+const EhCard = ({ title, children }: EhCardProps) => (
   <Center py={6}>
     <Box w="70vw" bg="#222b45" boxShadow={'2xl'} rounded={'md'}>
       <Stack color="white" spacing="8" py="6" px="24" align={'center'}>
@@ -18,3 +18,5 @@ export const EhCard = ({ title, children }: EhCardProps) => (
     </Box>
   </Center>
 )
+
+export default EhCard
