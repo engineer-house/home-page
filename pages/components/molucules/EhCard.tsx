@@ -14,8 +14,8 @@ const EhCard = ({ title, children }: EhCardProps) => (
       boxShadow={'2xl'}
       rounded={'md'}
     >
-      <Stack color="white" spacing="8" py="6" px="6vw" align={'center'}>
-        <Heading>{title}</Heading>
+      <Stack color="white" spacing="20" py="6vh" px="6vw" align={'center'}>
+        <Heading size="2xl">{title}</Heading>
         <Box fontWeight="500" rounded={'full'}>
           {children}
         </Box>
