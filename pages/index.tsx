@@ -45,8 +45,8 @@ const Home: NextPage = () => (
         <Box h="0" pt="50%" position="relative">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13136.59566833695!2d135.51735646773676!3d34.60039568387014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f5!3m3!1m2!1s0x6000ddf50e99f2ed%3A0xcc624ea7fe5551e7!2z44Ko44Oz44K444OL44Ki44OP44Km44K5!5e0!3m2!1sja!2sjp!4v1664120955066!5m2!1sja!2sjp"
-            width="80%"
-            height="80%"
+            width="100%"
+            height="100%"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             style={{
