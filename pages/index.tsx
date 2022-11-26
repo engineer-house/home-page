@@ -71,8 +71,12 @@ const Home: NextPage = () => (
           <ListItem>
             <ListIcon as={CheckCircleIcon} color="green.500" />
             レンタサイクル： 「
-            <Link color="#598bff" fontWeight="bold">
-              <a href="https://docomo-cycle.jp/osaka/">大阪バイクシェア</a>
+            <Link
+              color="#598bff"
+              fontWeight="bold"
+              href="https://docomo-cycle.jp/osaka/"
+            >
+              大阪バイクシェア
             </Link>
             」を利用して、長居駅もしくは矢田駅から自転車を利用できます。
             エンジニアハウス最寄りのバイクステーションは「UR
