@@ -86,26 +86,16 @@ const Home: NextPage = () => (
       </Stack>
     </EhCard>
 
-    <EhCard title="CONTACT">
-      エンジニアハウスでは参加者を募集しています！
-      <br />
-      作るのが好きなエンジニアの方、興味があってこれから始めてみたい方はぜひ参加してみてください！
-      <br />
-      参加のご希望やご質問は LINE で受付中！
-      <a
-        href="https://lin.ee/rCMzAn7"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image
-          src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
-          alt="友だち追加"
-          mt="2"
-          height="7"
-          border="0"
-        />
-      </a>
-    </EhCard>
+    <Link
+      href="https://lin.ee/rCMzAn7"
+      target="_blank"
+      rel="noopener noreferrer"
+      position="fixed"
+      bottom="10"
+      right="16vw"
+    >
+      <Image src="/line.svg" alt="友だち追加" height="16" />
+    </Link>
   </Box>
 )
 
