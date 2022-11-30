@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import {
   Box,
   Heading,
+  HStack,
   Image,
   Link,
   List,
@@ -15,7 +16,7 @@ import { CheckCircleIcon } from '@chakra-ui/icons'
 import EhCard from './components/molucules/EhCard'
 
 const Home: NextPage = () => (
-  <Box backgroundColor="#151a30" color="white">
+  <>
     <VStack h="100vh" justifyContent="center">
       <Box position="sticky" top="0" pt="4">
         <Heading p="8" as="h2" size="3xl">
@@ -61,28 +62,41 @@ const Home: NextPage = () => (
 
         <List spacing="2" textAlign="left">
           <ListItem>
-            <ListIcon as={CheckCircleIcon} color="green.500" />
-            お車：3
-            台まで停められます。（満車の場合は近隣の駐車場をご利用ください）
+            <HStack alignItems="baseline" spacing="0">
+              <ListIcon as={CheckCircleIcon} color="green.500" />
+              <Text style={{ textIndent: '-1px' }}>
+                お車：3
+                台まで停められます。（満車の場合は近隣の駐車場をご利用ください）
+              </Text>
+            </HStack>
           </ListItem>
           <ListItem>
-            <ListIcon as={CheckCircleIcon} color="green.500" />
-            電車：御堂筋線 長居駅 (徒歩 15 分)
-            <Text pl="71px">近鉄南大阪線 矢田駅 (徒歩 15 分)</Text>
+            <HStack alignItems="baseline" spacing="0">
+              <ListIcon as={CheckCircleIcon} color="green.500" />
+              <Text style={{ textIndent: '-1px' }}>
+                電車：御堂筋線 長居駅 (徒歩 15 分)
+                <Box pl="48px">近鉄南大阪線 矢田駅 (徒歩 15 分)</Box>
+              </Text>
+            </HStack>
           </ListItem>
           <ListItem>
-            <ListIcon as={CheckCircleIcon} color="green.500" />
-            レンタサイクル： 「
-            <Link
-              color="#598bff"
-              fontWeight="bold"
-              href="https://docomo-cycle.jp/osaka/"
-            >
-              大阪バイクシェア
-            </Link>
-            」を利用して、長居駅もしくは矢田駅から自転車を利用できます。
-            エンジニアハウス最寄りのバイクステーションは「UR
-            サンヴァリエ東長居」です。
+            <HStack alignItems="baseline" spacing="0">
+              <ListIcon as={CheckCircleIcon} color="green.500" />
+              <Text style={{ textIndent: '-1px' }}>
+                レンタサイクル：
+                <Link
+                  display="contents"
+                  color="#598bff"
+                  fontWeight="bold"
+                  href="https://docomo-cycle.jp/osaka/"
+                >
+                  大阪バイクシェア
+                </Link>
+                を利用して、長居駅もしくは矢田駅から自転車を利用できます。
+                エンジニアハウス最寄りのバイクステーションは「UR
+                サンヴァリエ東長居」です。
+              </Text>
+            </HStack>
           </ListItem>
         </List>
       </Stack>
@@ -98,7 +112,7 @@ const Home: NextPage = () => (
     >
       <Image src="/line.svg" alt="友だち追加" height="16" />
     </Link>
-  </Box>
+  </>
 )
 
 export default Home
